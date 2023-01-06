@@ -1,0 +1,82 @@
+.step--baner::after{
+    content: "";
+    position: absolute;
+    height: 5%;
+    width: 98%;
+    top: 48%;
+    left: 1%;
+    background-color: aliceblue;
+    z-index: 0;
+}
+.step--baner{
+    width: 50%;
+}
+.step--baner--step{
+    width: 50px;
+    height:50px;
+    z-index:1;
+    background-color: white;
+    text-align: center;
+    padding: 0.4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 500px;
+    position: relative;
+}
+.step--1::after{
+    content: "Create Account";
+    position: absolute;
+    font-size: 0.7rem;
+    top: 102%;
+    left: 3%;
+    color: white;
+}
+.step--2::after{
+    content: "About You";
+    position: absolute;
+    font-size: 0.7rem;
+    top: 102%;
+    left: 3%;
+    color: white;
+}
+.step--3::after{
+    content: "Your Experience";
+    position: absolute;
+    font-size: 0.7rem;
+    top: 102%;
+    left: 0%;
+    color: white;
+}
+.step--4::after{
+    content: "Go To Finish";
+    position: absolute;
+    font-size: 0.7rem;
+    top: 102%;
+    left: 3%;
+    color: white;
+}
+.help--baner{
+    width: 60%;
+}
+.help--baner--icon{
+    width: 60px;
+    fill: white;
+    margin: 10%;
+}
+@media  only screen and (max-width:950px) {
+    .step--baner--step{
+        width: 50px;
+        height:50px;
+        z-index:1;
+        padding: 0.6rem;
+    }
+    .step--baner{
+        width: 75%;
+    }
+    .help--baner{
+        width: 100%;
+    }
+    .apply--info{
+        display: none;
+    }
+}

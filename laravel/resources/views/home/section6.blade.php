@@ -1,0 +1,33 @@
+<section class="w-100 text-dark">
+    <h3 class="text-center mt-5" style="font-size: 2.2rem;">Ready to learn about forex?</h3>
+    <p class="text-center my-2" style="font-size: 1.4rem;">No matter your skill level, we have videos and guides to help you take your trading to the next level.</p>
+    <div class="container w-75 p-2 mx-2 text-dark mx-auto">
+        <div class="row p-2 my-5">
+            <div class="col-sm p-3 my-1 mx-2"style="background-color: rgb(229, 236, 236)">
+                <h5 class="text-center">New trader?</h5>
+                <p class="text-center">Welcome, we’ll show you how forex works and why you should trade it.</p>
+                <h6 class="text-center"><a href="" class="text-decoration-none text-dark">METATRADER ></a></h6>
+                <svg style="width:50%; display: block; margin:auto;fill: red;" class="my-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+            </div>
+            <div class="col-sm p-3 my-1 mx-2" style="background-color: rgb(229, 236, 236)">
+                <h5 class="text-center">Have some experience?</h5>
+                <p class="text-center">Let’s create a trading plan that will help you stay on track and meet your goals.</p>
+                <h6 class="text-center"><a href="" class="text-decoration-none text-dark">CREATE A PLAN ></a></h6>
+                <svg style="width:50%; display: block; margin:auto; fill: rgb(128, 209, 90);" class="my-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 80C0 53.5 21.5 32 48 32h96c26.5 0 48 21.5 48 48V96H384V80c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H432c-26.5 0-48-21.5-48-48V160H192v16c0 1.7-.1 3.4-.3 5L272 288h96c26.5 0 48 21.5 48 48v96c0 26.5-21.5 48-48 48H272c-26.5 0-48-21.5-48-48V336c0-1.7 .1-3.4 .3-5L144 224H48c-26.5 0-48-21.5-48-48V80z"/></svg>
+            </div>
+            <div class="col-sm p-3 my-1 mx-2" style="background-color: rgb(229, 236, 236)">
+                <h5 class="text-center">Want to go deep on strategy?</h5>
+                <p class="text-center">Great, we have guides on specific strategies and how to use them.</p>
+                <h6 class="text-center"><a href="" class="text-decoration-none text-dark">VIEW STRATEGIES ></a></h6>
+                <svg style="width:50%; display: block; margin:auto;" class="my-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+            </div>
+            <div class="col-sm p-3 my-1 mx-2 text-white" style="background-color: rgb(12, 70, 97)">
+                <h5 class="text-center">Not sure where to start?</h5>
+                <p class="text-center">Take our short quiz and get matched resources that fit your trading style.</p>
+                <h6 class="text-center"><a href="" class="text-decoration-none text-white">TAKE OUR QUIZ ></a></h6>
+                <svg style="width:30%; block; margin:auto; fill: red;" class="my-5 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm64 192c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm64-64c0-17.7 14.3-32 32-32s32 14.3 32 32V352c0 17.7-14.3 32-32 32s-32-14.3-32-32V160zM320 288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V320c0-17.7 14.3-32 32-32z"/></svg>
+                <svg style="width:30%; margin:auto; fill: rgb(126, 202, 95);" class="my-5 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M258.9 412.3c-16.7 33.8-31 35.7-34.9 35.7s-18.1-1.9-34.9-35.7c11.4-3.9 23.1-8.4 34.9-13.5c11.8 5.1 23.4 9.7 34.9 13.5zM252.8 312c-9.7 5.8-19.3 11.2-28.8 16c-9.4-4.8-19-10.2-28.8-16c-12.1-7.3-23.6-14.8-34.2-22.4c-.7-10.8-1-22-1-33.6s.4-22.7 1-33.6c10.6-7.6 22.1-15.1 34.2-22.4c9.7-5.8 19.3-11.2 28.8-16c9.4 4.8 19 10.2 28.8 16c12.1 7.3 23.6 14.8 34.2 22.4c.7 10.8 1 22 1 33.6s-.4 22.7-1 33.6c-10.6 7.6-22.1 15.1-34.2 22.4zm184.8 72c20.7-37.1 9.4-82.8-23.6-128c33-45.2 44.3-90.9 23.6-128c-20.2-36.3-62.5-49.3-115.2-43.2C300.4 32.7 266.8 0 224 0s-76.4 32.7-98.4 84.8c-52.7-6.1-95 6.8-115.2 43.2C-10.3 165.1 1 210.8 34 256C1 301.2-10.3 346.9 10.4 384c20.2 36.3 62.5 49.3 115.2 43.2c22 52.1 55.7 84.8 98.4 84.8s76.4-32.7 98.4-84.8c52.7 6.1 95-6.8 115.2-43.2zm-67.8-79.2c18.9 30.2 14.2 44 11.9 48.1c-1.6 2.9-8.4 13-40.2 11.7c2.8-13.1 5-26.9 6.7-41.2c7.6-6.1 14.8-12.3 21.6-18.6zm11.9-145.7c2.3 4.2 7 17.9-11.9 48.1c-6.8-6.3-14-12.5-21.6-18.6c-1.7-14.3-3.9-28-6.7-41.2c31.8-1.4 38.6 8.7 40.2 11.7zM224 64c3.9 0 18.1 1.9 34.9 35.7c-11.4 3.9-23.1 8.4-34.9 13.5c-11.8-5.1-23.4-9.7-34.9-13.5C205.9 65.9 220.1 64 224 64zM106.5 147.5c-2.8 13.1-5 26.9-6.7 41.2c-7.6 6.1-14.8 12.3-21.6 18.6C59.4 177 64 163.3 66.3 159.1c1.6-2.9 8.4-13 40.2-11.7zM66.3 352.9c-2.3-4.2-7-17.9 11.9-48.1c6.8 6.3 14 12.5 21.6 18.6c1.7 14.2 3.9 28 6.7 41.2c-31.8 1.4-38.6-8.7-40.2-11.7zM224 288c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"/></svg>
+            </div>
+        </div>
+    </div>
+</section>

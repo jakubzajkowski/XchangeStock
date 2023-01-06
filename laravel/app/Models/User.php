@@ -17,12 +17,8 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-
+    protected $table = 'users';
+    public $incrementing = true;
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -30,9 +26,8 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
-
+    protected $fillable = ['email','password','username','country','title','firstname','surname','birth','number'];
     /**
      * The attributes that should be cast.
      *
@@ -41,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 }

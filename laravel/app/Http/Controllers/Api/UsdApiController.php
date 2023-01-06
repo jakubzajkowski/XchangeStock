@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Usd;
 
@@ -16,7 +17,7 @@ class UsdApiController extends Controller
         $res = json_decode($result,true);
 
         $check = $usd::orderBy('date')->get();
-        if ($check[count($check)-1]['date']!==$res['rates'][count($res['rates'])-1]['effectiveDate']) {
+        if ($check[count($check)-1]['date']!==$res['rates'][count($res['rates'])-1]['effectiveDate']){
             $usd->code=$res['code'];
             $usd->date=$res['rates'][count($res['rates'])-1]['effectiveDate'];
             $usd->price=$res['rates'][count($res['rates'])-1]['mid'];
