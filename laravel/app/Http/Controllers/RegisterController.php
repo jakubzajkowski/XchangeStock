@@ -5,6 +5,7 @@ use App\Rules\PasswordLengthRule ;
 use App\Rules\BirthRule;
 use Illuminate\Http\Request;
 use App\Models\User;
+
 class RegisterController extends Controller
 {
     public function show(){
@@ -22,8 +23,23 @@ class RegisterController extends Controller
             'birth'=>['required',new BirthRule()],
             'number'=>'required',
         ]);
-        $user = User::create(request(['email', 'country','username','password','title','firstname','surname','birth','number']));
-        auth()->login($user);
-        return redirect()->to('/');
+        $data=$req->input();
+        $user = User::create(
+            [
+            'email'=>$data['email'],
+            'country'=>$data['country'],
+            'username'=>$data['username'],
+            'password'=>$data['password'],
+            'title'=>$data['title'],
+            'firstname'=>$data['firstname'],
+            'surname'=>$data['surname'],
+            'birth'=>$data['birth'],
+            'number'=>$data['number'],
+            'verified_email'=>"no",
+            ]
+    );
+        session(['user' => $user]);
+        session(['remember' => $req->input('remember')]);
+        return redirect()->to('register2');
     }
 }

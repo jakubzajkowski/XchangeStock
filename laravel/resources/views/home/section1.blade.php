@@ -8,7 +8,7 @@
             <li>Award-winning platforms including MT4 & 5</li>
             <li>XAU/USD spreads from $0.04 with DMA account</li>
         </ul>
-        <button class="btn btn-warning text-white">OPEN AN ACCOUNT</button>
+        <button class="btn btn-warning text-white"><a href="/register" class="text-light text-decoration-none">OPEN AN ACCOUNT</a></button>
         <button class="btn btn-success my-2">TEST DEMO</button>
         <p style="font-size: 0.75rem" class="my-2 w-50">*Bid and Ask spread cost still applies. Runs through 31st December 2022. Extended hours are only available for major US stocks.</p>
     </div>

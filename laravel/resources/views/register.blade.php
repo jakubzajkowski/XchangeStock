@@ -1,10 +1,9 @@
 @extends('layout.root')
 @section('register')
-
 <main class="w-100 text-dark">
     <section class="w-100 mx-auto bg-primary">
         <div class="mx-auto position-relative d-flex justify-content-between m-5 step--baner">
-            <h3 class="step--baner--step step--1" >1</h3>
+            <h3 class="step--baner--step step--1 step--1-first_page" >1</h3>
             <h3 class="step--baner--step step--2" >2</h3>
             <h3 class="step--baner--step step--3" >3</h3>
             <h3 class="step--baner--step step--4" >4</h3>

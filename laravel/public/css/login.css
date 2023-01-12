@@ -1,0 +1,30 @@
+.login--username::before{
+    content: "Username";
+    position: absolute;
+    color: black;
+    left: 3.5%;
+    top: var(--usernameLogin,15%);
+    transition: top 0.5s ease-in-out;
+}
+.login--login::before{
+    content: "Password";
+    position: absolute;
+    color: black;
+    left: 3.5%;
+    top: var(--passwordLogin,15%);
+    transition: top 0.5s ease-in-out;
+}
+.login--login{
+    position: relative;
+}
+.login--username{
+    position: relative;
+}
+.login--username:hover::before{
+    top: -100%;
+    left: 3.5%;
+}
+.login--login:hover::before{
+    top: -100%;
+    left: 3.5%;
+}

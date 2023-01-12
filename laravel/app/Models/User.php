@@ -27,7 +27,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
     ];
-    protected $fillable = ['email','password','username','country','title','firstname','surname','birth','number'];
+    protected $fillable = ['verified_email','email','password','username','country','title','firstname','surname','birth','number'];
     /**
      * The attributes that should be cast.
      *
