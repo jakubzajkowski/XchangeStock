@@ -6,6 +6,9 @@ let dollar = document.querySelector('.dollar--price');
 fetch('http://127.0.0.1:8000/api/usd').then(res=>res.json()).then((res)=>{
     dollar.innerHTML=res[res.length-1].price;
 })
+fetch('http://127.0.0.1:8000/api/chf').then(res=>res.json())
+fetch('http://127.0.0.1:8000/api/gbp').then(res=>res.json())
+fetch('http://127.0.0.1:8000/api/eur').then(res=>res.json())
 
 
 let nextPlus= document.querySelector('.next--plus');

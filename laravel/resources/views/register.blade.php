@@ -354,6 +354,7 @@
         </div>
     </div>
     </section>
+    @include('home/section8')
 </main>
 
 @endsection

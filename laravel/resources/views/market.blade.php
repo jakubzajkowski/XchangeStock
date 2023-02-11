@@ -49,7 +49,7 @@
                     <tbody>
                       @foreach ($power as $value)
                       <tr>
-                         <td>{{$value[4]}}</td>
+                         <td><a class="text-decoration-none text-dark" href="/market/{{$value[6]}}">{{$value[4]}}</a></td>
                          <td>{{$value[0]}}</td>
                          <td>{{$value[1]}}</td>
                          <td>{{$value[5]}}%</td>
@@ -59,5 +59,6 @@
                   </table>
             </div>
         </section>
+        @include('home/section8')
     </main>
 @endsection

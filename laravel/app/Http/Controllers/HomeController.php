@@ -11,7 +11,7 @@ use App\Models\Chf;
 class HomeController extends Controller
 {
     public function show(Euro $euro,Usd $usd,Gbp $gbp,Chf $chf){
-        $euro = $euro::orderBy('date')->get();
+        string : $euro = $euro::orderBy('date')->get();
         $usd = $usd::orderBy('date')->get();
         $gbp = $gbp::orderBy('date')->get();
         $chf = $chf::orderBy('date')->get();

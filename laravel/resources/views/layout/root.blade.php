@@ -6,7 +6,11 @@
         <title>Xchangestock</title>
         <link href="{{asset('css/home.css')}}" rel="stylesheet">
         <link href="{{asset('css/register.css')}}" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js" integrity="sha512-cGS9y5MepPe9pI2nibL3W1n4ImVcgcvipKjl0IXmgMgXlrwIX0bc2lm4QgMRtEnyN+k/ct0a5iCaqo9cXYgNGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="{{asset("js/mobile.js")}}" defer></script>
@@ -25,24 +29,7 @@
                 </nav>
             </div>
             <div class="bg-secondary">
-                <nav class="navbar navbar-inverse w-75 mx-auto d-flex"> 
-                    <ul class="nav w-75">
-                        @if (Auth::guest())
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/market" class="text-white text-decoration-none">MARKET</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/services" class="text-white text-decoration-none">SERVICES</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/education" class="text-white text-decoration-none">EDUCATION</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/aboutUs" class="text-white text-decoration-none">ABOUT US</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/support" class="text-white text-decoration-none">SUPPORT</a></li>
-                        @else
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/market" class="text-white text-decoration-none">MARKET</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/services" class="text-white text-decoration-none">SERVICES</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/education" class="text-white text-decoration-none">EDUCATION</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/aboutUs" class="text-white text-decoration-none">ABOUT US</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/support" class="text-white text-decoration-none">SUPPORT</a></li>
-                            <li class="mx-2 btn btn-outline-success text-white border border-secondary"><a href="/account/{{Auth::user()->id}}" class="text-white text-decoration-none">ACCOUNT</a></li>
-                        @endif
-                    </ul>
-                </nav>
+                @include('layout.navbar')
             </div>
         </header>
         <header class="mobile">
@@ -50,24 +37,7 @@
             <h3><a href="/" class="text-dark text-decoration-none"><span class="text-success">X</span>changeStock<span class="h6">.com</span></a></h3>
         </header>
         <div class="bg-secondary mobile__nav p-2">
-            <nav class="navbar navbar-inverse w-75 mx-auto d-flex justify-content-center"> 
-                <ul class="nav w-50">
-                    @if (Auth::guest())
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/market" class="text-white text-decoration-none">MARKET</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/services" class="text-white text-decoration-none">SERVICES</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/education" class="text-white text-decoration-none">EDUCATION</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/aboutUs" class="text-white text-decoration-none">ABOUT US</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/support" class="text-white text-decoration-none">SUPPORT</a></li>
-                    @else
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/market" class="text-white text-decoration-none">MARKET</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/services" class="text-white text-decoration-none">SERVICES</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/education" class="text-white text-decoration-none">EDUCATION</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/aboutUs" class="text-white text-decoration-none">ABOUT US</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/support" class="text-white text-decoration-none">SUPPORT</a></li>
-                        <li class="mx-2 my-4 btn btn-outline-success text-white border border-secondary"><a href="/account/{{Auth::user()->id}}" class="text-white text-decoration-none">ACCOUNT</a></li>
-                    @endif
-                </ul>
-            </nav>
+            @include('layout.navbarMobile')
         </div>
         @yield('home')
         @yield('aboutus')
@@ -81,6 +51,12 @@
         @yield('register4')
         @yield('login')
         @yield('userdashboard')
+        @yield('usd-eur')
+        @yield('gbp-usd')
+        @yield('eur-gbp')
+        @yield('admindashboard')
+        @yield('news')
+        @yield('newsPages')
         <footer class="w-100">
             <div class="container w-75 p-5 mx-2 text-dark mx-auto">
                 <hr>

@@ -36,6 +36,7 @@ class RegisterController extends Controller
             'birth'=>$data['birth'],
             'number'=>$data['number'],
             'verified_email'=>"no",
+            'role'=>"user",
             ]
     );
         session(['user' => $user]);

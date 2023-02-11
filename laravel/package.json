@@ -10,9 +10,13 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@webpack-cli/generators": "^3.0.1",
         "axios": "^0.21",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "typescript": "^4.9.5"
     }
 }

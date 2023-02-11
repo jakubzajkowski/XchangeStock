@@ -1,5 +1,7 @@
 @extends('layout.root')
 @section('userdashboard')
+<script type="module" src="{{asset("js/userGraph.js")}}" defer></script>
+<link href="{{asset('css/userGraph.css')}}" rel="stylesheet">
 <main class="w-100 text-dark">
     <section class="w-100 mx-auto bg-primary">
         <div class="w-75 mx-auto p-5 d-flex justify-content-between align-items-center"">
@@ -39,22 +41,23 @@
     <section class="w-100 mx-auto">
         <div class="container w-75 p-2 mx-2 text-dark mx-auto">
             <div class="row p-2 my-5">
-                <div class="col-sm p-4 mx-2">
-                   <h1 class="text-center display-1">+Add Graph</h1>
+                <div class="col-sm p-4 mx-2 add__container position-relative">
+                   <h1 class="text-center display-1 add--graph">+Add Graph</h1>
                 </div>
-                <div class="col-sm p-4 mx-2">
-                    <h1 class="text-center display-1">+Add Graph</h1>
+                <div class="col-sm p-4 mx-2 add__container position-relative">
+                    <h1 class="text-center display-1 add--graph">+Add Graph</h1>
                 </div>
             </div>
             <div class="row p-2 my-5">
-                <div class="col-sm p-4 mx-2">
-                    <h1 class="text-center display-1">+Add Graph</h1>
+                <div class="col-sm p-4 mx-2 add__container position-relative">
+                    <h1 class="text-center display-1 add--graph">+Add Graph</h1>
                  </div>
-                 <div class="col-sm p-4 mx-2">
-                    <h1 class="text-center display-1">+Add Graph</h1>
+                 <div class="col-sm p-4 mx-2 add__container position-relative">
+                    <h1 class="text-center display-1 add--graph">+Add Graph</h1>
                  </div>
             </div>
         </div>
     </section>
+    @include('home/section8')
 </main>
 @endsection

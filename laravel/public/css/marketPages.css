@@ -1,0 +1,17 @@
+.table__numbers{
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 950px) {
+    .table__numbers{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    table{
+        font-size: 0.9rem;
+    }
+    .table__numbers td{
+        padding: 0.1rem;
+    }
+}

@@ -15,6 +15,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\UserDashboardController;
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,10 +28,16 @@ use App\Http\Controllers\UserDashboardController;
 */
 
 Route::get('/', [HomeController::class,'show']);
+Route::get('/admin', [AdminController::class, 'show'])->middleware(['auth', 'isAdmin']);
 Route::get('/mail', [MailController::class,'sendMail']);
 Route::get('/services', [ServicesController::class,'show']);
-Route::get('/education', [EducationController::class,'show']);
+Route::prefix('education')->group(function () {
+    Route::get('', [EducationController::class,'show']);
+    Route::get('/news', [EducationController::class,'showEducationNews']);
+    Route::get('/news/{title}', [EducationController::class,'showNewsPages']);
+});
 Route::get('/market', [MarketController::class,'show']);
+Route::get('/market/{currency}', [MarketController::class,'showMarketPages']);
 Route::get('/support', [SupportController::class,'show']);
 Route::get('/aboutUs', [AboutUsController::class,'show']);
 Route::get('/register', [RegisterController::class,'show']);
@@ -38,7 +45,9 @@ Route::get('/register2', [RegisterController2::class,'show']);
 Route::get('/register3', [RegisterController3::class,'show']);
 Route::get('/register4', [RegisterController4::class,'show']);
 Route::get('/login', [LoginController::class,'show']);
-Route::get('/account/{id}', [UserDashboardController::class,'show']);
+Route::get('/account/{id}', [UserDashboardController::class,'show'])->middleware('auth');
+Route::get('/userinfo', [UserDashboardController::class,'userInfo'])->middleware('auth');
+Route::post('/account/{id}', [UserDashboardController::class,'addGraph'])->middleware('auth');
 Route::get('/logout', [LogoutController::class,'logout']);
 Route::post('/register', [RegisterController::class,'getData']);
 Route::post('/register2', [RegisterController2::class,'getData']);
