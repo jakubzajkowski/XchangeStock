@@ -1,6 +1,6 @@
 @extends('layout.root')
 @section('news')
-<script src="{{asset("js/newsFilter.js")}}" defer></script>
+<script src="{{asset("js/education/news/newsFilter.js")}}" defer></script>
 <main class="w-100 text-dark">
     <section class="w-100 mx-auto">
         <div class="bg-primary w-100 p-5">

@@ -1,0 +1,110 @@
+.calendar__main{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.calendar{
+    background-color: rgb(88, 88, 88);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.calendar__main ul {
+    list-style: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+.days {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    width: 14%;
+}
+.currentday {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    width: 14%;
+    box-shadow:  0 0 0 3px rgb(241, 11, 11);
+}
+.eventday {
+    display: inline-block;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    width: 14%;
+    box-shadow:  0 0 0 3px greenyellow;
+}
+.days__name{
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    width: 14%;
+}
+.event{
+    width: 75%;
+    margin: auto;
+}
+.calendar__main__column{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.calendar__main ul li:hover {
+    box-shadow:  0 0 0 3px white;
+}
+.calendar__upper__baner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.calendar__upper__baner button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar__today{
+    color: white;
+}
+.calendar__icons{
+    width: 5%;
+    fill: white;
+    cursor: pointer;
+}
+@media only screen and (max-width:950px) {
+    .calendar__main{
+        padding: 0.1rem;
+        margin: 0 0 0 -1rem;
+    }
+    .days {
+        padding: 0.2rem;
+    }
+    .calendar__main ul {
+        font-size: 0.8rem;
+    }
+    .days__name{
+        padding: 0rem;
+        width: 14%;
+    }
+    .calendar__icons{
+        width: 10%;
+    }
+    .event{
+        width: 100%;
+        margin: auto;
+    }
+}

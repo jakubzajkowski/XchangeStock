@@ -13,28 +13,36 @@ export default class Table {
         return new Promise((resolve,reject)=>{
                 fetch(this.urlFirst).then(res=>res.json()).then(res=>{
                     resolve(res[res.length-1])
-                })
+                }).catch(error => {
+                    reject(error);
+                  });
         })
     }
     get_data1():any{
         return new Promise((resolve,reject)=>{
                 fetch(this.urlSec).then(res=>res.json()).then(res=>{
                     resolve(res[res.length-1])
-                })
+                }).catch(error => {
+                    reject(error);
+                  });
         })
     }
     get_data2():any{
         return new Promise((resolve,reject)=>{
                 fetch(this.urlThird).then(res=>res.json()).then(res=>{
                     resolve(res[res.length-1])
-                })
+                }).catch(error => {
+                    reject(error);
+                  });
         })
     }
     get_data3():any{
         return new Promise((resolve,reject)=>{
                 fetch(this.urlFourth).then(res=>res.json()).then(res=>{
                     resolve(res[res.length-1])
-                })
+                }).catch(error => {
+                    reject(error);
+                  });
         })
     }
     calculatePower(currencyPrice0: number,currencyPrice1: number): number{

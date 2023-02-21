@@ -37,7 +37,7 @@
                                 <li class="list-group-item"><h6><a href="" class="text-dark text-decoration-none">Market Education</a></h6></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Lastest News</a></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Trade Ideas</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Ecodomic Calendar</a></li>
+                                <li class="list-group-item"><a href="/education/calendar" class="text-dark text-decoration-none">Ecodomic Calendar</a></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Market InSights</a></li>
                             </ul>
                         </div>
@@ -83,7 +83,7 @@
                                 <li class="list-group-item"><h6><a href="" class="text-dark text-decoration-none">Market Education</a></h6></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Lastest News</h6></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Trade Ideas</h6></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Ecodomic Calendar</h6></li>
+                                <li class="list-group-item"><a href="/education/calendar" class="text-dark text-decoration-none">Ecodomic Calendar</h6></li>
                                 <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Market InSights</h6></li>
                             </ul>
                         </div>

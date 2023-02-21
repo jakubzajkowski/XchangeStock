@@ -1,6 +1,6 @@
 @extends('layout.root')
 @section('login')
-<script src="{{asset("js/login.js")}}" defer></script>
+<script src="{{asset("js/login/login.js")}}" defer></script>
 <link href="{{asset('css/login.css')}}" rel="stylesheet">
 <main class="w-100 text-dark">
     <section class="w-100 mx-auto">

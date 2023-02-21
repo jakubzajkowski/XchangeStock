@@ -16,6 +16,7 @@ use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\UserDashboardController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CalendarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +36,8 @@ Route::prefix('education')->group(function () {
     Route::get('', [EducationController::class,'show']);
     Route::get('/news', [EducationController::class,'showEducationNews']);
     Route::get('/news/{title}', [EducationController::class,'showNewsPages']);
+    Route::get('/calendar', [CalendarController::class,'show']);
+    Route::get('/calendar/events', [CalendarController::class,'showApi']);
 });
 Route::get('/market', [MarketController::class,'show']);
 Route::get('/market/{currency}', [MarketController::class,'showMarketPages']);

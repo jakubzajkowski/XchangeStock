@@ -15,6 +15,9 @@ const banerGraphs=()=>{
     </div>
     `
 }
+
+
+
 const Creategraph=(parent)=>{
     let graph = document.createElement('canvas')
     graph.setAttribute("class","graph")
@@ -50,6 +53,9 @@ const Creategraph=(parent)=>{
             }
           });
 }
+
+
+
 const CreateBaner=(parent)=>{
     let baner = document.createElement('div')
     baner.innerHTML=banerGraphs()
@@ -65,12 +71,24 @@ const CreateBaner=(parent)=>{
         })
     })
     graphButtons.forEach(x=>{
-        x.addEventListener('click',()=>{
-            Creategraph(parent)
-            console.log(parent.firstChild.nodeName)
+        x.addEventListener('click',(e)=>{
+            if(!parent.classList.contains('chart--added')){
+              parent.classList.add('chart--added')
+              Creategraph(parent)
+            }
+            else{
+              let graph = document.querySelector('canvas')
+                parent.classList.remove('chart--added')
+                graph.remove()
+            }
             })
         })
 }
+
+
+
+
+
 
 addGraph.forEach(x=>{
     x.addEventListener('click',(e)=>{

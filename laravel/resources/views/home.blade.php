@@ -10,5 +10,5 @@
         @include('home.section7')
         @include('home.section8')
     </main>
-    <script src="{{asset("js/home.js")}}"></script>
+    <script src="{{asset("js/home/home.js")}}"></script>
 @endsection

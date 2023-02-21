@@ -57,6 +57,7 @@
         @yield('admindashboard')
         @yield('news')
         @yield('newsPages')
+        @yield('calendar')
         <footer class="w-100">
             <div class="container w-75 p-5 mx-2 text-dark mx-auto">
                 <hr>

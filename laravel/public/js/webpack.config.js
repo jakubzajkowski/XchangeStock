@@ -11,10 +11,10 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 
 const config = {
-    entry: './userGraphTobuild.js',
+    entry: './education/calendar/index.js',
     output: {
-        path: path.resolve(__dirname),
-        filename: 'userGraph.js',
+        path: path.resolve(__dirname,'education/calendar/main'),
+        filename: 'index.js',
     },
     devServer: {
         open: true,
