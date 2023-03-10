@@ -4,11 +4,11 @@ const dateToView=(now,monthChangeSystemOne,calendarToday,days,monthNames)=>{
     calendarToday.innerHTML=`${now.day}.${(monthToView<10) ? "0"+monthToView : monthToView}.${yearToView}`
     if(now.month+1!=monthToView || now.year!=yearToView){
         calendarToday.innerHTML=`${monthNames[monthToView-1]} ${yearToView}`
-        days[now.day+1].classList.remove("currentday")
+        days[parseInt(now.day)+1].classList.remove("currentday")
     }
     else{
         calendarToday.innerHTML=`${now.day}.${(monthToView<10) ? "0"+monthToView : monthToView}.${yearToView}`
-        days[now.day+1].classList.add("currentday")
+        days[parseInt(now.day)+1].classList.add("currentday")
     }
 }
 

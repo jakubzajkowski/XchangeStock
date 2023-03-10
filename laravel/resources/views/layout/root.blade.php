@@ -23,7 +23,7 @@
                     <ul class="nav align-items-center p-1">
                         <button class="mx-2 border p-1 rounded bg-warning btn"><a href="/register" class="text-dark text-decoration-none">OPEN AN ACCOUNT</a></button>
                         <li class="mx-2 btn"><a href="/login" class="text-dark text-decoration-none">LOGIN</a></li>
-                        <li class="mx-2 btn">Contact us</li>
+                        <li class="mx-2 btn"><a href="/support" class="text-dark text-decoration-none">Contact us</a></li>
                         <input class="mx-2" type="text" placeholder="Search XchangeStock">
                     </ul>
                 </nav>

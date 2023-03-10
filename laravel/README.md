@@ -1,64 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## <span style="color:yellowgreen">Hi i'm Jakub Zajkowski</span>
+I'm a student od computer science in Warsaw.i love programming this is my hobby and job.
+## <span style="color:aqua">About this Website</span>
+This is a Currency website in this site you can check price your favourite currencies.I modeled layout of this site on forex and many notes are just copied. This App doesn't have special funcion side for logged clients but this will change.
+## Build
+- Laravel
+- balde
+- Bootstrap
+- css
+- js
+- gsap
+- chart.js
+## Code Example
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+##### PHP code
+```php
+class RegisterController4 extends Controller
+{
+    public function show(){
+        return view('register4');
+    }
+    public function getData(Request $req){
+        $mail = new MailController();
+        $mail->sendMail(session('user')['email'],session('user')['username']);
+        if (session('remember')=='on'){
+            Auth::login(session('user'));
+            return redirect()->to('/account/'.session('user')['id']);
+        }
+        else{
+            return redirect()->to('/');
+        }
+    }
+}
+```
+##### JS code
+```js
+let mobile = document.querySelector('.mobile')
+let desktop = document.querySelector('.desktop')
+let bars = document.querySelector('.bars')
+let mobileNav = document.querySelector('.mobile__nav')
+let screenWidth = window.matchMedia("(max-width: 950px)")
+    if (screenWidth.matches) {
+        desktop.style.display="none"
+        let barsState=true
+        mobileNav.style.opacity=barsState ? '0':'1';
+        bars.addEventListener('click',()=>{
+            barsState=!barsState
+            mobileNav.style.opacity=barsState ? '0':'1';
+            mobileNav.style.zIndex=barsState ? '0':'2';
+        }) 
+    } else {
+        mobile.style.display="none"
+        mobileNav.style.display="none"
+    }
+```
+##### HTML blade
+```html
+<script src="{{asset("js/market/calendar.js")}}" defer></script>
+<section class="w-100 text-dark">
+    <div class="container w-75 p-2 mx-2 text-dark mx-auto">
+        <div class="row p-2 my-5">
+            <div class="col-sm col-md-8 p-4 mx-2">
+               <h5 class="mb-4">LATEST RESEARCH</h5>
+               <h3>{{$news[0]}}</h3>
+               <p style="font-weight: 600">{{$news[1]}}</p>
+               <p style="font-size: 0.8rem">{{$news[3]}}</p>
+               <p>{{$news[2]}}</p>
+               <p style="font-size: 0.8rem">TAGS: <span class="text-success">BoJ, Forex, Trade Ideas, USD/JPY, Volatility</span></p>
+               <button class="mx-2 mt-4 border p-2 rounded bg-success btn"><a href="/register" class="text-white text-decoration-none">VIEW LATEST RESEARCH</a></button>
+            </div>
+            <div class="col-sm p-4 mx-2 text-center" style="background-color:rgb(238, 237, 237);">
+                <h4 class="text-start mb-3">Economic Calendar</h4>
+              <div class="p-2 xd"></div>
+            </div>
+        </div>
+    </div>
+</section>
+```
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Hope you enjoy✨🎉🎯

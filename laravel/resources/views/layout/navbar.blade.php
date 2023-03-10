@@ -12,11 +12,11 @@
                         </div>
                         <div class="col-sm">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><h6><a href="" class="text-dark text-decoration-none">POPULAR MARKETS</a></h6></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">USD/EUR</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">GOLD/USD</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">EUR/GPB</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">GOLD/EUR</a></li>
+                                <li class="list-group-item"><h6><a href="/market" class="text-dark text-decoration-none">POPULAR MARKETS</a></h6></li>
+                                <li class="list-group-item"><a href="/market/usd-eur" class="text-dark text-decoration-none">USD/EUR</a></li>
+                                <li class="list-group-item"><a href="/market/gold-usd" class="text-dark text-decoration-none">GOLD/USD</a></li>
+                                <li class="list-group-item"><a href="/market/eur-gbp" class="text-dark text-decoration-none">EUR/GBP</a></li>
+                                <li class="list-group-item"><a href="/market/gold-eur" class="text-dark text-decoration-none">GOLD/EUR</a></li>
                             </ul>
                         </div>
                     </div>
@@ -34,11 +34,11 @@
                         </div>
                         <div class="col-sm">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><h6><a href="" class="text-dark text-decoration-none">Market Education</a></h6></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Lastest News</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Trade Ideas</a></li>
+                                <li class="list-group-item"><h6><a href="/market" class="text-dark text-decoration-none">Market Education</a></h6></li>
+                                <li class="list-group-item"><a href="/education/news" class="text-dark text-decoration-none">Lastest News</a></li>
+                                <li class="list-group-item"><a href="/support" class="text-dark text-decoration-none">Trade Ideas</a></li>
                                 <li class="list-group-item"><a href="/education/calendar" class="text-dark text-decoration-none">Ecodomic Calendar</a></li>
-                                <li class="list-group-item"><a href="" class="text-dark text-decoration-none">Market InSights</a></li>
+                                <li class="list-group-item"><a href="/services" class="text-dark text-decoration-none">Market InSights</a></li>
                             </ul>
                         </div>
                     </div>

@@ -10,7 +10,7 @@
               <form class="form-horizontal p-2" style="background-color: rgb(235, 241, 241)" action="http://127.0.0.1:8000/login" method="POST">
                 @csrf
                 <h3 class="mx-4 p-2">Web Trading</h3>
-                <p class="p-4">High performance trading platform that's fully loaded for serious traders. <a href="" class="text-dark">Don't have an account?</a></p>   
+                <p class="p-4">High performance trading platform that's fully loaded for serious traders. <a href="/register" class="text-dark">Don't have an account?</a></p>   
                 <div class="form-group mx-4 login--username my-5"> 
                     <input class="mx-2 w-75 p-1 login__username" type="text" name="username">
                     <span class="text-danger" style="display: block;font-size:0.8rem">@error('username'){{$message}}@enderror</span>
