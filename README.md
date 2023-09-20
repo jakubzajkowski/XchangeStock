@@ -18,30 +18,43 @@ XchangeStock is a web application that allows users to view daily currency price
     <td valign="top"><img src="./laravel/imgs/mobile1.JPG"/></td>
   </tr>
 </table>
+
 ## Desktop View
-#### Home page
+
+### Home page
+
 <p align="center" style="margin-top: 30px;">
   <img src="./laravel/imgs/screen0.JPG"/>
 </p>
-#### Currency page
+
+### Currency page
+
 <p align="center" style="margin-top: 30px;">
   <img src="./laravel/imgs/screen1.JPG"/>
 </p>
-#### Login page
+
+### Login page
+
 <p align="center" style="margin-top: 30px;">
   <img src="./laravel/imgs/screen2.JPG"/>
 </p>
-#### Calendar page
+
+### Calendar page
+
 <p align="center" style="margin-top: 30px;">
   <img src="./laravel/imgs/screen3.JPG"/>
 </p>
-#### News page
+
+### News page
+
 <p align="center" style="margin-top: 30px;">
   <img src="./laravel/imgs/screen4.JPG"/>
 </p>
 
 ## Technologies Used
+
 ### Backend: 
+
 - PHP Laravel: A popular PHP framework for building web applications.
 - SQL: A relational database management system for storing and managing data.
 ### Frontend:
