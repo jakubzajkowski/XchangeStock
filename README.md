@@ -57,6 +57,7 @@ XchangeStock is a web application that allows users to view daily currency price
 
 - PHP Laravel: A popular PHP framework for building web applications.
 - SQL: A relational database management system for storing and managing data.
+- NBP WEB API: Api to get price of gold and other currencies.
 ### Frontend:
 - HTML: Markup language for structuring web pages.
 - CSS: Styling language for designing the application's appearance.
